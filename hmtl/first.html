@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+    
+    <style>
+        body {
+            background-color: aqua;
+        }
+        p,
+        li{
+            font-family: 'Hanalei', cursive;
+        }
+        .container{
+            /* puting the flex in the center! */
+            display: flex;
+            justify-content: center; 
+            
+        }
+        .content-wrapper{
+            width: 450px;
+           
+        }
+        .style-details{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 50px;
+            margin-top: 95px;
+            margin-bottom: 75px;
+
+        }
+        .style-details-text{
+            text-align: right;
+            color: rgb(15, 11, 241);
+            font-weight: 600;
+        }
+        h3{
+            color: rgb(240, 18, 18);
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .style-details-logo img{
+            width:100%;
+            
+        }
+        .dos-donts-wrapper{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-gap: 30px;
+
+        }
+        .dont-image-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dont-image-box img{
+            width: 200%;
+        }
+        .dos-donts-heading{
+            font-weight: 900;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .blue{
+            color: darkblue;
+        }
+        .red{
+            color: brown;
+        }
+        .dos-donts-list li{
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .alernate-options-wrapper{
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
+        .alernate-options-wrapper h3{
+            color: darkgreen;
+            font-weight: 900;
+            font-size: 24px;
+        }
+        .alernate-options-wrapper li{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        .alternate-options-images{
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            grid-gap: 100px 40px;
+            margin-left: -200px;
+            
+        }
+        .alternate-options-images img{
+            width: 400px;
+        }
+        .image-logos{
+            width:60%;
+        }
+        .text-logos{
+            width: 90%;
+        }
+        .additionnal-branding-details{
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
+        .additionnal-branding-details a{
+            color: rgb(134, 6, 253);
+            font-size: 23px;
+            transition: .7s;
+            text-decoration: none;
+        }
+        .additionnal-branding-details a:hover{
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+        .additionnal-branding-details p{
+            margin-bottom: 42px;
+        }
+        @media (max-width: 48em) {
+            .style-details, .dos-donts-wrapper{
+            grid-template-columns: 1fr;
+            grid-gap: 50px;}
+            .style-details-text{
+                text-align: center;
+            }
+           
+            .dos-donts-wrapper img{
+                width: 400px;
+            }
+        }
+    </style>
+ </head>
+ <body>
+
+    <div class="container">
+
+        <div class="content-wrapper">
+            <h2> meh</h2>
+
+            <p>farrari</p>
+            <p> and even more stuff</p>
+            <p>and even more stuff!!!!</p>
+            <div class="style-details">
+            <div class="style-details-text">
+                <h3> mine as well put lorem </h3>
+                <div> The first-ever Ferrari was actually called the Auto Avio Costruzioni 815. It was a two-seater barchetta that hosted an impressive 1.5-liter engine. </div>
+                <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                <div>  obcaecati non pariatur quibusdam totam quas facilis! Nisi, est.</div>
+                </div>
+                <div class="style-details-logo">
+                    <img src="https://i.pinimg.com/originals/33/43/cc/3343cc952ff7625fba8eaafa2922862b.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="dos-donts-wrapper">
+
+                <div class="dos-donts-list">
+                    <div class="dos-donts-heading blue">
+                        logo Dos
+                    </div>
+               
+                <ul>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </div>
+                <div class="dos-donts-list">
+                    <div class="dos-donts-heading red">
+                        logo Donts
+                    </div>
+                
+                <ul>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </div>
+                
+                <div class="donts-images">
+                    <div class="dont-image-box">
+                        <img src="https://www.classic-car-auctions.info/wp-content/uploads/2018/06/1962-Ferrari-250-GTO-RM-Sothebys.jpg.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="alernate-options-wrapper">
+                <h3>Alternate options</h3>
+                <ul>
+                    <li>more stuff</li>
+                    <li>more stuff</li>
+                    <li>more stuff</li>
+                    <li>more stuff</li>
+                </ul>
+            </div>
+                <div class="alternate-options-images">
+                    <img class="image-logos" src="https://95octane.com/wp-content/uploads/2014/11/awesome_car_designs_khyzyl_saleem_7.jpg" alt="">
+                    <img class="image-logos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQah0rQS7J7Y_80DH8ReN0nDXFMqJVvk0LfXQ&usqp=CAU" alt="">
+                    <img class="text-logos" src="https://cdn.carbuzz.com/gallery-images/original/177000/300/177356.jpg" alt="">
+                    <img class="text-logos" src="https://wallpaperaccess.com/full/47456.jpg" alt="">
+                    
+                </div>
+                <div class="additionnal-branding-details">
+                    <h3>Asset Download</h3>
+                    
+                     <p>
+                        <a href="download">download</a>
+                    </p>
+                    <h3>Usage</h3>
+                    <p>
+                        With all the success of Ferrari, it’s hard to imagine Enzo as a 10-year-old boy. Yet his love of racing would fuel his passion for creating cars. This alone should teach us about pursuing our dreams. RIP, Enzo.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>
